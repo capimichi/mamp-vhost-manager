@@ -1,5 +1,7 @@
 # Mamp Vhost Manager
 
+![Main](https://github.com/capimichi/mamp-vhost-manager/raw/main/screenshot/main.png)
+
 ## The Objective
 
 This project is a simple GUI for managing virtual hosts on a local MAMP installation.
