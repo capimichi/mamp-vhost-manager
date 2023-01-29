@@ -23,3 +23,11 @@ It has a GUI that shows you all the virtual hosts you have on your machine.
 It let you create, edit and delete virtual hosts.
 
 It automatically creates the virtual host file in the apache2 folder, then adds the virtual host to the hosts file and let you restarts apache2.
+
+It creates a new folder in MAMP config folder, so you can easily manage your virtual hosts.
+
+It then adds an Include directive to the apache2.conf file, to include all hosts in the folder.
+
+## What it doesn't do
+
+It doesn't manage already existing virtual hosts.
