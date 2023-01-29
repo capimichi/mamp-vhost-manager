@@ -1,19 +1,25 @@
-# README
+# Mamp Vhost Manager
 
-## About
+## The Objective
 
-This is the official Wails Vue template.
+This project is a simple GUI for managing virtual hosts on a local MAMP installation.
 
-You can configure the project by editing `wails.json`. More information about the project settings can be found
-here: https://wails.io/docs/reference/project-config
+It is born because I needed to manage a lot of virtual hosts on my local machine and I didn't want to do it manually.
 
-## Live Development
+It let you create, edit and delete virtual hosts.
 
-To run in live development mode, run `wails dev` in the project directory. This will run a Vite development
-server that will provide very fast hot reload of your frontend changes. If you want to develop in a browser
-and have access to your Go methods, there is also a dev server that runs on http://localhost:34115. Connect
-to this in your browser, and you can call your Go code from devtools.
+## Status
 
-## Building
+It is still in development, but it is usable.
 
-To build a redistributable, production mode package, use `wails build`.
+It currently works with apache2, but can be implemented to work with nginx.
+
+It is born for OSX system, but can be implemented to work on other systems.
+
+## What it does
+
+It has a GUI that shows you all the virtual hosts you have on your machine.
+
+It let you create, edit and delete virtual hosts.
+
+It automatically creates the virtual host file in the apache2 folder, then adds the virtual host to the hosts file and let you restarts apache2.
