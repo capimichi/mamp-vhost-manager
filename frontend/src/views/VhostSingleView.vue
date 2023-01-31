@@ -47,7 +47,11 @@ export default {
   name: "SingleVhostView",
   data: function () {
     return {
-      vhost: {},
+      vhost: {
+        Name: '',
+        ServerName: '',
+        DocumentRoot: ''
+      },
       baseDocumentRoot: ''
     }
   },
@@ -74,7 +78,7 @@ export default {
       var vhostName = this.$route.query.name;
       // Check if name is empty
       if (vhostName === undefined) {
-        this.vhost = {};
+        return ;
       }
       GetVhost(vhostName)
           .then((result) => {
